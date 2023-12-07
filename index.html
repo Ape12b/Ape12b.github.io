@@ -29,7 +29,7 @@
 
 				<!-- Header -->
 					<header id="header">
-						<a href="index.html" class="logo">Massively</a>
+						<a href="index.html" class="logo">Data Science potfolio</a>
 					</header>
 
 				<!-- Nav -->
@@ -52,7 +52,19 @@
 						<!-- Featured Post -->
 							<article class="post featured">
 								<header class="major">
-									<span class="date">April 25, 2017</span>
+									<p><span class="date"></span>.</p>
+										<script>
+											// JavaScript code to display the current date
+											var currentDateElement = document.querySelector(".date");
+											var currentDate = new Date();
+
+											// Format the date as per your requirements
+											var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+											var formattedDate = currentDate.toLocaleDateString('en-US', options);
+
+											// Set the formatted date to the HTML element
+											currentDateElement.textContent = formattedDate;
+										</script>
 									<h2><a href="#">Here are a<br />
 									massive headline</a></h2>
 									<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
