@@ -15,7 +15,17 @@
 	<body class="is-preload">
 
 		<!-- Wrapper -->
-			<div id="wrapper">
+		<div id="wrapper" class="fade-in">
+
+			<!-- Intro -->
+				<div id="intro">
+					<h1 style="position: absolute; top: 20%; left: 50%; transform: translate(-50%, -50%); z-index: 1; font-size: 60px; color: rgb(249, 252, 251); text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5)"> Hi, I am Apratim!
+						<br> <br> <span style="font-size: 40px;color: rgb(163, 219, 211); text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5)">Welcome to my Data Science Portfolio <br>
+							<i style="position: absolute; top: 150%;left: 0%; text-transform: none; font-size: 30px;color: rgb(243, 227, 3);">I study cells and diseases and how they interact with their environment. Now, I want to apply my knowledge to solving problems that the world is facing.</i></span></h1>				 
+							<ul class="actions">
+						<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+					</ul>
+				</div>
 
 				<!-- Header -->
 					<header id="header">
@@ -42,14 +52,25 @@
 						<!-- Post -->
 							<section class="post">
 								<header class="major">
-									<span class="date">April 25, 2017</span>
-									<h1>This is a<br />
-									Generic Page</h1>
+									<p><span class="date"></span>.</p>
+										<script>
+											// JavaScript code to display the current date
+											var currentDateElement = document.querySelector(".date");
+											var currentDate = new Date();
+
+											// Format the date as per your requirements
+											var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+											var formattedDate = currentDate.toLocaleDateString('en-US', options);
+
+											// Set the formatted date to the HTML element
+											currentDateElement.textContent = formattedDate;
+										</script>
+									<h1>About me</h1>
 									<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
 									facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
 									amet nullam sed etiam veroeros.</p>
 								</header>
-								<div class="image main"><img src="images/pic01.jpg" alt="" /></div>
+								<div class="image main"><img src="images\my_image.jpeg" alt="" /></div><br>
 								<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur sapien risus, commodo eget turpis at, elementum convallis enim turpis, lorem ipsum dolor sit amet nullam.</p>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus. Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum.</p>
 							</section>
